@@ -1,16 +1,15 @@
 $(document).ready(function(){
-  
-  $("h1").click(function(){
-    alert("This is a header");
-  });
-
   $("p").click(function(){
-    alert("This is a paragraph");
+    $("img").show();
+    $("p").hide();
   });
 
   $("img").click(function(){
-    alert("This is an image");
-  })
+    $("p").show();
+    $("img").hide();
+  });
 
-
+  $("h1").click(function(){
+    location.reload();
+  });
 });
